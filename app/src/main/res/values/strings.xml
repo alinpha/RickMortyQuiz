@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">RickMortyQuiz</string>
+    <string name="play_button">Play</string>
+    <string name="game_title">Rick and Morty</string>
+    <string name="game_subtitle">QUIZ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about">About</string>
+    <string name="rules">Rules</string>
 </resources>
