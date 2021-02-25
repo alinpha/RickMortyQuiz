@@ -8,4 +8,9 @@
 
     <string name="about">About</string>
     <string name="rules">Rules</string>
+
+    <string name="text_true">True</string>
+    <string name="text_false">False</string>
+    <string name="title_android_question">Android Trivia (%1$d/%2$d)</string>
+
 </resources>
