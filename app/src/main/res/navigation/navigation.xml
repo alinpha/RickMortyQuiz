@@ -29,12 +29,12 @@
         tools:layout="@layout/fragment_game_over" />
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.example.rickmortyquiz.AboutFragment"
-        android:label="fragment_about"
+        android:name="com.example.rickmortyquiz.screens.menu.AboutFragment"
+        android:label="@string/about"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/rulesFragment"
-        android:name="com.example.rickmortyquiz.RulesFragment"
-        android:label="fragment_rules"
+        android:name="com.example.rickmortyquiz.screens.menu.RulesFragment"
+        android:label="@string/rules"
         tools:layout="@layout/fragment_rules" />
 </navigation>
