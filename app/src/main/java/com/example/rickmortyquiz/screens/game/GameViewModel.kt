@@ -29,6 +29,20 @@ class GameViewModel : ViewModel() {
     private val _questionId = MutableLiveData<Int>()
     val questionId:LiveData<Int> get() = _questionId
 
+    private val _eventGameFinish = MutableLiveData<Boolean>()
+    val eventGameFinish: LiveData<Boolean> get() = _eventGameFinish
+
+    /** Method for the game completed event **/
+    fun onGameFinish() {
+        _eventGameFinish.value = true
+    }
+
+    /** Method for the game completed event **/
+
+    fun onGameFinishComplete() {
+        _eventGameFinish.value = false
+    }
+
     init {
         newGame()
     }
@@ -84,7 +98,10 @@ class GameViewModel : ViewModel() {
 
         }
 
-       // System.out.println(question.value)
+       if (questionBank.find { q -> q.attempted == false } == null ) {
+           //all questions attempted
+           _eventGameFinish.value = true
+       }
     }
 
     fun prev() {
